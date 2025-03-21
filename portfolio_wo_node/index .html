@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ida's Super Awesome Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="/">Ida O.</a>
+        <nav>
+            <a target="_blank" href="https://www.linkedin.com/in/ida-su-ozdemir/"><i class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/hira-hara"><i class="fa-brands fa-github"></i></a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="intro-header">
+                <h1>Hello! I am Ida...</h1>
+                <p>Software Engineering Student</p>
+            </div>
+            <h5 class="intro-description">
+                A student at McGill University BSc. studying Software Engineering in Montreal. 
+            </h5>
+            <div class="links-container"><i class="fa-solid link-arrow fa-arrow-right"></i> 
+                <a href="mailto:idasuozdemir@gmail.com">
+                    Email me
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/ida-su-ozdemir/">Linkedin</a>
+                <a target="_blank" href="https://github.com/hira-hara">GitHub</a>
+            </div>
+            <div id="play-game">
+                <button onclick="playGame()">Play game</button>
+            </div>
+            <div style="display: none;" class="color-div">
+                <h4>Pick a color</h4>
+                <p style="display: none;">Great... now it's ruined!</p>
+                <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
+                <button style="display: none;" onclick="resetColor()">Reset</button>
+            </div> 
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                        <th>Collaboration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Python</td>
+                        <td>Data analysis | Numpy</td>
+                        <td>GitHub | GitLab</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>Game design</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Web</td>
+                        <td>HTML | CSS | Javascript | NodeJS | Firebase | Google Sheets</td>
+                        <td>GitHub</td>
+                    </tr>
+                    <tr>
+                        <td>Simulation</td>
+                        <td>Gazebo | Rviz | Python | YAML</td>
+                        <td>GitHub</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section>
+            <h2>Latest Projects</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <div>
+                        <p>March 2024</p>
+                        <h4>Ida's Super Awesome Portfolio</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p><i class="fa-brands fa-html5"></i></p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p><i class="fa-brands fa-css"></i></p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p><i class="fa-brands fa-js"></i></p>
+                            </div>
+                        </div>
+                        <p>
+                           My little portfolio to play around with and showcase my skills! 
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" hred="/">Live</a>
+                            <a target="_blank" hred="/">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/portfolio_wo_node/public/african-wild-cat.avif" alt="ida-thumbnail" />
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <p>March 2024</p>
+                        <h4>Ida's Super Awesome Portfolio</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p><i class="fa-brands fa-html5"></i></p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p><i class="fa-brands fa-css"></i></p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p><i class="fa-brands fa-js"></i></p>
+                            </div>
+                        </div>
+                        <p>
+                           My little portfolio to play around with and showcase my skills! 
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" hred="/">Live</a>
+                            <a target="_blank" hred="/">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/portfolio_wo_node/public/african-wild-cat.avif" alt="ida-thumbnail" />
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <p>March 2024</p>
+                        <h4>Ida's Super Awesome Portfolio</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p><i class="fa-brands fa-html5"></i></p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p><i class="fa-brands fa-css"></i></p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p><i class="fa-brands fa-js"></i></p>
+                            </div>
+                        </div>
+                        <p>
+                           My little portfolio to play around with and showcase my skills! 
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" hred="/">Live</a>
+                            <a target="_blank" hred="/">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/portfolio_wo_node/public/african-wild-cat.avif" alt="ida-thumbnail" />
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>By <a href="https://www.ida-su-ozdemir.com" 
+            target="_blank" >Ida</a> 🌟 the repo on <a target="_blank" href="">GitHub</a> </p>
+    </footer>
+    <script>
+        // Interactice game section
+        const body = document.querySelector('body')
+        const colorInput = document.getElementById('color-picker')
+        const colorDiv = document.querySelector('.color-div') // by class
+        const hiddenText = document.querySelector('.color-div p')
+        const resetBtn = document.querySelector('.color-div button')
+        const playBtn  = document.getElementById('play-game')
+
+        //functions
+        function playGame() {
+            //this function enables the play of the game by showing the color selector input
+            colorDiv.style.display = 'block' 
+            playBtn.style.display = 'none' // hide button in default
+        }
+
+        function changeColor() {
+            // take the users selected color on the input, and assign it to be the bg color
+            const selectedColor = colorInput.value
+            body.style.background = selectedColor
+            resetBtn.style.display = 'block'
+            hiddenText.style.display = 'block'
+            colorInput.style.display = 'none'
+        }
+
+        function resetColor() {
+            body.style.background = 'white'
+            colorInput.style.display = 'block'
+            playBtn.style.display = 'block'
+            
+            hiddenText.style.display = 'none'
+            resetBtn.style.display = 'none'
+            colorDiv.style.display = 'none'
+            
+        }
+    </script>
+</body>
+</html>
